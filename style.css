@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #273036;
+    color: #fafafa;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.msg {
+    max-width: 60rem;
+    margin: 5px auto;
+    padding: 0 1.6rem;
+}
+
+
+/* Header */
+
+.header {
+    font-family: 'Yuji Syuku', serif;
+    background: #6F439C;
+    color: white;
+    padding: 1.6rem 0;
+}
+
+.header-title {
+    font-size: 3.5 rem;
+    margin-bottom: .4rem;
+}
+
+.header__subtitle {
+    /* color: #777; */
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.actions {
+    background-color: #4c4950;
+    padding: .1rem
+}
+
+.search__container {
+    align-items: center;
+    display: flex;
+    max-width: 60rem;
+    margin: 20px auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+.search__container--spaced {
+    justify-content: space-between
+}
+
+.search-input {
+    border-radius: 10px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 300;
+    height: 3.5rem;
+    margin-right: 1.6rem;
+    padding: .4rem .8rem;
+}
+
+.search-btn {
+    border: 1px solid #9361bf;
+    height: 3.5rem;
+    background: #9361bf;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15rem;
+    color: #ddd;
+}
+
+:root {
+    --orange: #ff8c00;
+}
+
+ul {
+    list-style: none;
+}
+
+.city-section {
+    margin: 30px 0 20px;
+    text-align: center;
+}
+
+.cities {
+    display: grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.city {
+    position: relative;
+    padding: 40px 10%;
+    border-radius: 40px 10px;
+    background: rgb(65, 65, 65);
+    color: #fafafa;
+    border-bottom: 5px solid #ddd;
+}
+
+.city:hover {
+    border-color: #1e2432;
+}
+
+figcaption {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.city-temp {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-top: 10px;
+    color: #fafafa;
+}
+
+.city sup {
+    font-size: 0.5em;
+}
+
+.city-name sup {
+    padding: 0.2em 0.6em;
+    border-radius: 30px;
+    color: var(--text_light);
+    background: var(--orange);
+}
+
+.city-icon {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 500px) {
+    .cities {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 20px;
+    }
+}
